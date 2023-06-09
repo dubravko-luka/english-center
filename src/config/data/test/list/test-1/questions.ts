@@ -90,7 +90,7 @@ const q_4 = {
     {
       index: 0,
       content: `curious`,
-      isCorrect: false
+      isCorrect: true
     },
     {
       index: 1,
@@ -181,7 +181,7 @@ const q_7 = {
     {
       index: 2,
       content: `impatient`,
-      isCorrect: false
+      isCorrect: true
     },
     {
       index: 3,
