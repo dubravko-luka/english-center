@@ -272,6 +272,385 @@ const q_10 = {
   ]
 }
 
-export const Q_PART_1: DetailQuestionInterface[] = [q_1, q_2, q_3, q_4, q_5, q_6, q_7, q_8, q_9, q_10]
+const q_11 = {
+  content: `I often make decision xxx. Then, of course, I am sorry I made them.`,
+  id: 10,
+  answers: [
+    {
+      index: 0,
+      content: `quickly`,
+      isCorrect: false
+    },
+    {
+      index: 1,
+      content: `quickest`,
+      isCorrect: false
+    },
+    {
+      index: 2,
+      content: `quicker`,
+      isCorrect: false
+    },
+    {
+      index: 3,
+      content: `quick`,
+      isCorrect: false
+    }
+  ]
+};
+
+const q_12 = {
+  content: `Base jumping, the sport of jumping from a high building, antenna tower, bridge, etc., is xxx`,
+  id: 11,
+  answers: [
+    {
+      index: 0,
+      content: `a dangerously sport`,
+      isCorrect: false
+    },
+    {
+      index: 1,
+      content: `an extremely sport`,
+      isCorrect: false
+    },
+    {
+      index: 2,
+      content: `a sport extremely dangerous`,
+      isCorrect: false
+    },
+    {
+      index: 3,
+      content: `an extremely dangerous sport`,
+      isCorrect: false
+    }
+  ]
+};
+
+const q_13 = {
+  content: `13. Lincoln tunnel has xxx Holland tunnel.`,
+  id: 12,
+  answers: [
+    {
+      index: 0,
+      content: `more traffic lanes as`,
+      isCorrect: false
+    },
+    {
+      index: 1,
+      content: `more traffic lanes than`,
+      isCorrect: false
+    },
+    {
+      index: 2,
+      content: `most traffic lanes as`,
+      isCorrect: false
+    },
+    {
+      index: 3,
+      content: `as traffic lanes as`,
+      isCorrect: false
+    }
+  ]
+};
+
+const q_14 = {
+  content: ``,
+  id: 13,
+  answers: [
+    {
+      index: 0,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 1,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 2,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 3,
+      content: ``,
+      isCorrect: false
+    }
+  ]
+};
+
+const q_15 = {
+  content: ``,
+  id: 14,
+  answers: [
+    {
+      index: 0,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 1,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 2,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 3,
+      content: ``,
+      isCorrect: false
+    }
+  ]
+};
+
+const q_16 = {
+  content: ``,
+  id: 15,
+  answers: [
+    {
+      index: 0,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 1,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 2,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 3,
+      content: ``,
+      isCorrect: false
+    }
+  ]
+};
+
+const q_17 = {
+  content: ``,
+  id: 16,
+  answers: [
+    {
+      index: 0,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 1,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 2,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 3,
+      content: ``,
+      isCorrect: false
+    }
+  ]
+};
+
+const q_18 = {
+  content: ``,
+  id: 17,
+  answers: [
+    {
+      index: 0,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 1,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 2,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 3,
+      content: ``,
+      isCorrect: false
+    }
+  ]
+};
+
+const q_19 = {
+  content: ``,
+  id: 18,
+  answers: [
+    {
+      index: 0,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 1,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 2,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 3,
+      content: ``,
+      isCorrect: false
+    }
+  ]
+};
+
+const q_20 = {
+  content: ``,
+  id: 19,
+  answers: [
+    {
+      index: 0,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 1,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 2,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 3,
+      content: ``,
+      isCorrect: false
+    }
+  ]
+};
+
+const q_21 = {
+  content: ``,
+  id: 20,
+  answers: [
+    {
+      index: 0,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 1,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 2,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 3,
+      content: ``,
+      isCorrect: false
+    }
+  ]
+};
+
+const q_22 = {
+  content: ``,
+  id: 21,
+  answers: [
+    {
+      index: 0,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 1,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 2,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 3,
+      content: ``,
+      isCorrect: false
+    }
+  ]
+};
+
+const q_23 = {
+  content: ``,
+  id: 22,
+  answers: [
+    {
+      index: 0,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 1,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 2,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 3,
+      content: ``,
+      isCorrect: false
+    }
+  ]
+};
+
+const q_24 = {
+  content: ``,
+  id: 23,
+  answers: [
+    {
+      index: 0,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 1,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 2,
+      content: ``,
+      isCorrect: false
+    },
+    {
+      index: 3,
+      content: ``,
+      isCorrect: false
+    }
+  ]
+};
+
+
+export const Q_PART_1: DetailQuestionInterface[] = [q_1, q_2, q_3, q_4, q_5, q_6, q_7, q_8, q_9, q_10, q_11, q_12, q_13, q_14, q_15, q_16, q_17, q_18, q_19, q_20, q_21, q_22, q_23, q_24]
 
 // END PART 1
