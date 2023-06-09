@@ -273,7 +273,7 @@ const q_10 = {
 }
 
 const q_11 = {
-  content: `I often make decision xxx. Then, of course, I am sorry I made them.`,
+  content: `I often make decision ${space_line}. Then, of course, I am sorry I made them.`,
   id: 10,
   answers: [
     {
@@ -300,7 +300,7 @@ const q_11 = {
 };
 
 const q_12 = {
-  content: `Base jumping, the sport of jumping from a high building, antenna tower, bridge, etc., is xxx`,
+  content: `Base jumping, the sport of jumping from a high building, antenna tower, bridge, etc., is ${space_line}`,
   id: 11,
   answers: [
     {
@@ -327,7 +327,7 @@ const q_12 = {
 };
 
 const q_13 = {
-  content: `13. Lincoln tunnel has xxx Holland tunnel.`,
+  content: `Lincoln tunnel has ${space_line} Holland tunnel.`,
   id: 12,
   answers: [
     {
@@ -354,297 +354,297 @@ const q_13 = {
 };
 
 const q_14 = {
-  content: ``,
+  content: `The Rio de Janeiro harbor in Brazil is one of ${space_line} harbors in the world.`,
   id: 13,
   answers: [
     {
       index: 0,
-      content: ``,
+      content: `biggest and most amazing`,
       isCorrect: false
     },
     {
       index: 1,
-      content: ``,
+      content: `the most big and amazing`,
       isCorrect: false
     },
     {
       index: 2,
-      content: ``,
+      content: `bigger and more amazing`,
       isCorrect: false
     },
     {
       index: 3,
-      content: ``,
+      content: `the biggest and most amazing`,
       isCorrect: false
     }
   ]
 };
 
 const q_15 = {
-  content: ``,
+  content: `Kate: "Can you give me a ride to class? My motorbike isn't working."\nRuth: "${space_line}"`,
   id: 14,
   answers: [
     {
       index: 0,
-      content: ``,
+      content: `No, I don't have a clue.`,
       isCorrect: false
     },
     {
       index: 1,
-      content: ``,
+      content: `No problem. I'll do it on Sunday.`,
       isCorrect: false
     },
     {
       index: 2,
-      content: ``,
+      content: `Yeah, sure. I'lI be at your house at 7.00.`,
       isCorrect: false
     },
     {
       index: 3,
-      content: ``,
+      content: `Yes. I'll give you the key.`,
       isCorrect: false
     }
   ]
 };
 
 const q_16 = {
-  content: ``,
+  content: `Mr. Black: "Would you mind feeding my parrot?"\nMs. White: "${space_line}"`,
   id: 15,
   answers: [
     {
       index: 0,
-      content: ``,
+      content: `No. I don't. I'll feed it after school.`,
       isCorrect: false
     },
     {
       index: 1,
-      content: ``,
+      content: `Yes. I would feel better.`,
       isCorrect: false
     },
     {
       index: 2,
-      content: ``,
+      content: `Sure. I'll look at it after school.`,
       isCorrect: false
     },
     {
       index: 3,
-      content: ``,
+      content: `I guess so. I will look for it.`,
       isCorrect: false
     }
   ]
 };
 
 const q_17 = {
-  content: ``,
+  content: `Peter: "Would you mind ${space_line} my plants this weekend? I'm going on a business trip."\nMary: "No, I don't mind. I'll do that for you."`,
   id: 16,
   answers: [
     {
       index: 0,
-      content: ``,
+      content: `water`,
       isCorrect: false
     },
     {
       index: 1,
-      content: ``,
+      content: `watering`,
       isCorrect: false
     },
     {
       index: 2,
-      content: ``,
+      content: `waters`,
       isCorrect: false
     },
     {
       index: 3,
-      content: ``,
+      content: `to water`,
       isCorrect: false
     }
   ]
 };
 
 const q_18 = {
-  content: ``,
+  content: `When ${space_line} people live in a small place with a bad living condition, life can become very difficult and unpleasant.`,
   id: 17,
   answers: [
     {
       index: 0,
-      content: ``,
+      content: `few`,
       isCorrect: false
     },
     {
       index: 1,
-      content: ``,
+      content: `little`,
       isCorrect: false
     },
     {
       index: 2,
-      content: ``,
+      content: `too many`,
       isCorrect: false
     },
     {
       index: 3,
-      content: ``,
+      content: `too much`,
       isCorrect: false
     }
   ]
 };
 
 const q_19 = {
-  content: ``,
+  content: `Jack: "I think it's good that ${space_line} people are buying hybrid cars."\nJill: "Yeah. It causes ${space_line} pollution"`,
   id: 18,
   answers: [
     {
       index: 0,
-      content: ``,
+      content: `less / more`,
       isCorrect: false
     },
     {
       index: 1,
-      content: ``,
+      content: `less / fewer`,
       isCorrect: false
     },
     {
       index: 2,
-      content: ``,
+      content: `more / less`,
       isCorrect: false
     },
     {
       index: 3,
-      content: ``,
+      content: `more / more`,
       isCorrect: false
     }
   ]
 };
 
 const q_20 = {
-  content: ``,
+  content: `If you ${space_line} a leaky faucet, you ${space_line} about 90 litres of water a day.`,
   id: 19,
   answers: [
     {
       index: 0,
-      content: ``,
+      content: `do not fix / will waste`,
       isCorrect: false
     },
     {
       index: 1,
-      content: ``,
+      content: `will not fix / will waste`,
       isCorrect: false
     },
     {
       index: 2,
-      content: ``,
+      content: `do not fix / would waste`,
       isCorrect: false
     },
     {
       index: 3,
-      content: ``,
+      content: `will not fix / waste`,
       isCorrect: false
     }
   ]
 };
 
 const q_21 = {
-  content: ``,
+  content: `Barry and I ${space_line} together for an ice-cream on Friday next week. Do you want to join us?`,
   id: 20,
   answers: [
     {
       index: 0,
-      content: ``,
+      content: `are getting`,
       isCorrect: false
     },
     {
       index: 1,
-      content: ``,
+      content: `am getting`,
       isCorrect: false
     },
     {
       index: 2,
-      content: ``,
+      content: `get`,
       isCorrect: false
     },
     {
       index: 3,
-      content: ``,
+      content: `got`,
       isCorrect: false
     }
   ]
 };
 
 const q_22 = {
-  content: ``,
+  content: `She has ${space_line} books, enough to read on the journey.`,
   id: 21,
   answers: [
     {
       index: 0,
-      content: ``,
+      content: `a lot`,
       isCorrect: false
     },
     {
       index: 1,
-      content: ``,
+      content: `much`,
       isCorrect: false
     },
     {
       index: 2,
-      content: ``,
+      content: `a few`,
       isCorrect: false
     },
     {
       index: 3,
-      content: ``,
+      content: `a little`,
       isCorrect: false
     }
   ]
 };
 
 const q_23 = {
-  content: ``,
+  content: `Stephen: "How much did you sell your old motorbike for?"\nLeroy: "Actually, ${space_line} But I think it's a reasonable price."`,
   id: 22,
   answers: [
     {
       index: 0,
-      content: ``,
+      content: `I'd prefer to not say.`,
       isCorrect: false
     },
     {
       index: 1,
-      content: ``,
+      content: `I'd rather to not say.`,
       isCorrect: false
     },
     {
       index: 2,
-      content: ``,
+      content: `I'd prefer not say.`,
       isCorrect: false
     },
     {
       index: 3,
-      content: ``,
+      content: `I'd rather not say.`,
       isCorrect: false
     }
   ]
 };
 
 const q_24 = {
-  content: ``,
+  content: `Tom: "Hello. Can I speak to the manager, please?"\nChristy: "Um, sorry. He's not at his desk right now.${space_line}`,
   id: 23,
   answers: [
     {
       index: 0,
-      content: ``,
+      content: `Would you like a message?`,
       isCorrect: false
     },
     {
       index: 1,
-      content: ``,
+      content: `Would you leave a message?`,
       isCorrect: false
     },
     {
       index: 2,
-      content: ``,
+      content: `Could I leave a message?`,
       isCorrect: false
     },
     {
       index: 3,
-      content: ``,
+      content: `Could you please take a message?`,
       isCorrect: false
     }
   ]

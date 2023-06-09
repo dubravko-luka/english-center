@@ -31,9 +31,9 @@ const QuestionComponent: React.FC<QuestionComponentInterface> = (props) => {
   return (
     <>
       <div>
-        <div className="text-md leading-5">
-          <span className="font-bold">{props?.item?.id + 1}. </span>
-          <span>{props?.item?.content}</span>
+        <div className="text-md flex gap-2">
+          <div className="font-bold">{props?.item?.id + 1}. </div>
+          <span className="leading-tight" dangerouslySetInnerHTML={{ __html: props?.item?.content.replace(/\n/g, '<br />') }} />
         </div>
       </div>
     </>
