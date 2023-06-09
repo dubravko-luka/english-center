@@ -1,0 +1,59 @@
+/* AGRANDIR */
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url('./fonts/agrandir/Agrandir-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url('./fonts/agrandir/Agrandir-TextBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url('./fonts/agrandir/Agrandir-ThinItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* THUNDER */
+
+@font-face {
+  font-family: 'Thunder';
+  src: url('./fonts/thunder/Thunder-SemiBoldLC.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thunder';
+  src: url('./fonts/thunder/Thunder-SemiBoldLCItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thunder';
+  src: url('./fonts/thunder/Thunder-ThinLC.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thunder';
+  src: url('./fonts/thunder/Thunder-ThinLCItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
