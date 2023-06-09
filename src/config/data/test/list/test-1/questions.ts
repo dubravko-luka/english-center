@@ -14,7 +14,7 @@ const q_1 = {
     {
       index: 1,
       content: `business meeting`,
-      isCorrect: true
+      isCorrect: false
     },
     {
       index: 2,
@@ -24,7 +24,7 @@ const q_1 = {
     {
       index: 3,
       content: `conference call`,
-      isCorrect: false
+      isCorrect: true
     }
   ]
 }
@@ -117,7 +117,7 @@ const q_5 = {
     {
       index: 0,
       content: `starts`,
-      isCorrect: false
+      isCorrect: true
     },
     {
       index: 1,
@@ -149,7 +149,7 @@ const q_6 = {
     {
       index: 1,
       content: `Solar energy`,
-      isCorrect: false
+      isCorrect: true
     },
     {
       index: 2,

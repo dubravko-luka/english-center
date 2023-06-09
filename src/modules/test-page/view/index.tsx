@@ -2,6 +2,7 @@ import React, { memo, useEffect, useState } from "react";
 import { useRouter } from 'next/router';
 import { PartTestInterface, DetailQuestionInterface, DetailAnswerInterface } from "@/types/interfaces";
 import { convertNumberToLetter } from "@/helpers/numbers";
+import { WrapperAnswer } from "./styled";
 const { LIST_TEST_DETAIL } = require("@/config/data/test/list");
 
 interface PartComponentInterface {
@@ -41,9 +42,9 @@ const AnswerComponent: React.FC<AnswerComponentInterface> = (props) => {
   return (
     <>
       <div>
-        <div>
+        <WrapperAnswer className={props?.item?.isCorrect ? 'correct' : 'wrong'}>
           {convertNumberToLetter(props?.item?.index)}. {props?.item?.content}
-        </div>
+        </WrapperAnswer>
       </div>
     </>
   )
