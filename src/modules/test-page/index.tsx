@@ -9,7 +9,7 @@ const TestListPage: React.FC = () => {
 
   return (
     <>
-      <div className="p-5">
+      <div className="py-5 container">
         {
           LIST_TEST.map((item, index) => (
             <LinkTest key={index}>

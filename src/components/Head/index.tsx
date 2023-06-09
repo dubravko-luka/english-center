@@ -65,6 +65,8 @@ const HeadDocs: React.FC<Props> = ({ title = '' }) => {
 				property="og:description"
 				content="English Skill..."
 			/>
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8599946851840808"
+				crossOrigin="anonymous"></script>
 		</Head>
 	);
 };

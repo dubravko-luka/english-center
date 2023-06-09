@@ -3,51 +3,55 @@ import styled from "styled-components";
 export const WrapperAnswer = styled.div`
   position: relative;
 
+  .index-answer {
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 30px;
+        border-style: solid;
+        border-radius: 100%;
+      }
+    }
+
   &.correct {
+    color: #1400FF;
     
-    &:before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: calc(-25px / 3.5);
-      transform: translateY(-55%);
-      width: 25px;
-      height: 30px;
-      background-image: url('/images/svg/circle-blue.svg');
-      background-size: 100% 100%;
-      background-position: center;
+    .index-answer {
+
+      &:before {
+        border-width: 1px;
+        border-color: #1400FF;
+      }
     }
   }
 
   &.choose-wrong {
+
+    color: #FF0006;
     
-    &:before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: calc(-25px / 3.5);
-      transform: translateY(-55%);
-      width: 25px;
-      height: 30px;
-      background-image: url('/images/svg/circle-red.svg');
-      background-size: 100% 100%;
-      background-position: center;
+    .index-answer {
+
+      &:before {
+        border-width: 1px;
+        border-color: #FF0006;
+      }
     }
   }
 
   &.choose {
     
-    &:before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: calc(-25px / 3.5);
-      transform: translateY(-55%);
-      width: 25px;
-      height: 30px;
-      background-image: url('/images/svg/circle-black.svg');
-      background-size: 100% 100%;
-      background-position: center;
+    .index-answer {
+
+      &:before {
+        border-width: 1px;
+        border-color: #000;
+      }
     }
   }
 `;

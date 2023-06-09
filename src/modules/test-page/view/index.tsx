@@ -31,7 +31,10 @@ const QuestionComponent: React.FC<QuestionComponentInterface> = (props) => {
   return (
     <>
       <div>
-        <div className="font-bold text-md leading-5">Question {props?.item?.id + 1}: {props?.item?.content}</div>
+        <div className="text-md leading-5">
+          <span className="font-bold">{props?.item?.id + 1}. </span>
+          <span>{props?.item?.content}</span>
+        </div>
       </div>
     </>
   )
@@ -71,7 +74,7 @@ const AnswerComponent: React.FC<AnswerComponentInterface> = (props) => {
             }
           `}
         >
-          {convertNumberToLetter(props?.item?.index)}. {props?.item?.content}
+          <span className="index-answer">{convertNumberToLetter(props?.item?.index)}.</span> {props?.item?.content}
         </WrapperAnswer>
       </div>
     </>
@@ -100,7 +103,7 @@ const Detail: React.FC = () => {
 
   return (
     <>
-      <div className="p-5">
+      <div className="py-5 container">
         <div className="mb-5">
           <Link href={AppRoutes.test}>
             <Svg name="arrow-left-black" />
@@ -108,13 +111,13 @@ const Detail: React.FC = () => {
         </div>
         {
           listQuestion.map((item, l_index) => (
-            <div key={l_index} className="grid grid-cols-12 gap-10">
+            <div key={l_index} className="grid grid-cols-12 xl:gap-x-10 gap-y-10">
               <div className="col-span-12">
                 <PartComponent item={item} />
               </div>
               {
                 item.questions?.map((question, q_index) => (
-                  <div key={q_index} className="xl:col-span-6 col-span-12">
+                  <div key={q_index} className={`xl:col-span-6 col-span-12`}>
                     <div className="mb-3">
                       <QuestionComponent item={question} />
                     </div>
