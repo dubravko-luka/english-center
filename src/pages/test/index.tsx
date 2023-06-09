@@ -5,7 +5,9 @@ const TestPage: React.FC = () => {
 
   return (
     <>
-      <TestListPage />
+      <div className="lg:px-[15rem]">
+        <TestListPage />
+      </div>
     </>
   )
 }
