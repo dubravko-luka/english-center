@@ -1,8 +1,15 @@
 import { AppRoutes } from "@/utils/routes";
 import Link from "next/link";
-import React, { memo } from "react";
+import { useRouter } from "next/router";
+import React, { memo, useEffect } from "react";
 
 const HomePage: React.FC = () => {
+
+  const router = useRouter()
+
+  useEffect(() => {
+    router.push(AppRoutes.test)
+  }, [])
 
   return (
     <>
