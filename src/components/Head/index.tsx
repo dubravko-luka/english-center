@@ -68,15 +68,8 @@ const HeadDocs: React.FC<Props> = ({ title = '' }) => {
 					content="English Skill..."
 				/>
 				<script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8599946851840808" crossOrigin="anonymous"></script>
 			</Head>
-			<Script
-				id="Adsense-id"
-				data-ad-client="ca-pub-8599946851840808"
-				async
-				strategy="beforeInteractive"
-				src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-			/>
-
 		</>
 	);
 };
