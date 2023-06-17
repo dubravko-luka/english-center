@@ -1,1 +1,4 @@
-export { }
+export enum TYPE_QUESTION {
+  SELECT = "SELECT",
+  READ_DOCS_SELECT = 'READ_DOCS_SELECT'
+}

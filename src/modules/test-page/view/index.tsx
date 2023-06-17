@@ -1,11 +1,12 @@
 import React, { memo, useEffect, useState } from "react";
 import { useRouter } from 'next/router';
-import { PartTestInterface, DetailQuestionInterface, DetailAnswerInterface } from "@/types/interfaces";
-import { convertNumberToLetter } from "@/helpers/numbers";
-import { WrapperAnswer } from "./styled";
+import { DetailQuestionInterface, DocsQuestionInterface, PartTestInterface } from "@/types/interfaces";
 import Svg from '@/components/react-svg'
 import { AppRoutes } from "@/utils/routes";
 import Link from "next/link";
+import { TYPE_QUESTION } from "@/types/enum";
+import QuestionSelect from '@/components/question-template/select'
+import QuestionReadDocsSelect from '@/components/question-template/read-docs-select'
 const { LIST_TEST_DETAIL } = require("@/config/data/test/list");
 
 interface PartComponentInterface {
@@ -15,75 +16,12 @@ interface PartComponentInterface {
 const PartComponent: React.FC<PartComponentInterface> = (props) => {
   return (
     <>
-      <div className="border-b-[1px] border-[#000000] pb-3">
+      <div className="pb-3">
         <div className="font-bold text-lg">{props?.item?.name}</div>
         <div className="font-bold text-sm">{props?.item?.description}</div>
       </div>
     </>
   )
-}
-
-interface QuestionComponentInterface {
-  item: DetailQuestionInterface;
-}
-
-const QuestionComponent: React.FC<QuestionComponentInterface> = (props) => {
-  return (
-    <>
-      <div>
-        <div className="text-md flex gap-2">
-          <div className="font-bold">{props?.item?.id + 1}. </div>
-          <span className="leading-tight" dangerouslySetInnerHTML={{ __html: props?.item?.content.replace(/\n/g, '<br />') }} />
-        </div>
-      </div>
-    </>
-  )
-}
-
-interface AnswerComponentInterface {
-  choose: Array<ChooseAnswerInterface>,
-  setChoose: (data: ChooseAnswerInterface[]) => void,
-  item: DetailAnswerInterface,
-  question: number
-}
-
-const AnswerComponent: React.FC<AnswerComponentInterface> = (props) => {
-  const isChooseExists = props.choose.findIndex((item) => item.question === props.question)
-
-  return (
-    <>
-      <div className={isChooseExists !== -1 ? 'cursor-not-allowed' : ''}>
-        <WrapperAnswer
-          onClick={async () => {
-            if (isChooseExists === -1) {
-              const d = {
-                question: props.question,
-                answer: props.item.index
-              }
-              props.setChoose([...props.choose, d])
-            }
-          }}
-          className={`
-            ${isChooseExists !== -1
-              ? props.item.isCorrect
-                ? 'correct'
-                : props.item.index === props.choose[isChooseExists].answer
-                  ? 'choose-wrong'
-                  : ''
-              : ''
-            }
-          `}
-        >
-          <span className="index-answer">{convertNumberToLetter(props?.item?.index)}.</span> {props?.item?.content}
-        </WrapperAnswer>
-      </div>
-    </>
-  )
-}
-
-interface ChooseAnswerInterface {
-  question: number,
-  answer: number,
 }
 
 const Detail: React.FC = () => {
@@ -92,13 +30,24 @@ const Detail: React.FC = () => {
   const { slug } = router.query;
 
   const [listQuestion, setListQuestion] = useState<PartTestInterface[]>([]);
-  const [choose, setChoose] = useState<ChooseAnswerInterface[]>([])
 
   useEffect(() => {
     if (slug) {
       setListQuestion(LIST_TEST_DETAIL[slug as string])
     }
   }, [slug])
+
+  const renderTemplate = (_questions: PartTestInterface) => {
+    switch (_questions.type) {
+      case TYPE_QUESTION.SELECT:
+        return <QuestionSelect questions={_questions.questions as DetailQuestionInterface[]} />;
+      case TYPE_QUESTION.READ_DOCS_SELECT:
+        return <QuestionReadDocsSelect docs={_questions.questions as DocsQuestionInterface[]} />;
+
+      default:
+        return <></>;
+    }
+  }
 
 
   return (
@@ -111,30 +60,12 @@ const Detail: React.FC = () => {
         </div>
         {
           listQuestion.map((item, l_index) => (
-            <div key={l_index} className="grid grid-cols-12 xl:gap-x-10 gap-y-10">
+            <div key={l_index} className={`grid grid-cols-12 xl:gap-x-10 gap-y-10 ${l_index > 0 ? 'mt-5 pt-5 border-t border-black' : ''}`}>
               <div className="col-span-12">
                 <PartComponent item={item} />
               </div>
               {
-                item.questions?.map((question, q_index) => (
-                  <div key={q_index} className={`xl:col-span-6 col-span-12`}>
-                    <div className="mb-3">
-                      <QuestionComponent item={question} />
-                    </div>
-                    {
-                      question?.answers?.map((answer, a_index) => (
-                        <div key={a_index} className="mb-2">
-                          <AnswerComponent
-                            question={question?.id}
-                            choose={choose}
-                            setChoose={setChoose}
-                            item={answer}
-                          />
-                        </div>
-                      ))
-                    }
-                  </div>
-                ))
+                renderTemplate(item)
               }
             </div>
           ))

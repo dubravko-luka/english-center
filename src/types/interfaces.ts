@@ -1,3 +1,5 @@
+import { TYPE_QUESTION } from "./enum"
+
 export interface DetailAnswerInterface {
   index: number,
   content: string,
@@ -6,13 +8,20 @@ export interface DetailAnswerInterface {
 
 export interface DetailQuestionInterface {
   id: number,
+  content?: string,
+  answers?: Array<DetailAnswerInterface>
+}
+
+export interface DocsQuestionInterface {
+  name?: string,
   content: string,
-  answers: Array<DetailAnswerInterface>
+  questions: Array<DetailQuestionInterface>
 }
 
 export interface PartTestInterface {
   id: number,
   name: string,
   description: string,
-  questions: Array<DetailQuestionInterface>
+  questions: DetailQuestionInterface[] | DocsQuestionInterface[],
+  type: TYPE_QUESTION
 }
